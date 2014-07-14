@@ -31,6 +31,11 @@
 	@import 'shared/responsive/tablet-portrait';
 }
 
+@media only screen and (max-width:unit((@bp-landscape-tablet-max / @base-font-size-px), em)) {
+	// < landscape tablet width screens
+	// @import 'shared/responsive/tablet-portrait-max';
+}
+
 @media only screen and (min-width:unit((@bp-landscape-tablet / @base-font-size-px), em)) {
 	// > landscape tablet width screens
 	@import 'shared/responsive/tablet-landscape';
@@ -38,7 +43,7 @@
 
 @media only screen and (max-width:unit((@bp-landscape-tablet-max / @base-font-size-px), em)) {
 	// < landscape tablet width screens
-	// @import 'shared/responsive/tablet-max';
+	// @import 'shared/responsive/tablet-landscape-max';
 }
 
 @media only screen and (min-width:unit((@bp-desktop / @base-font-size-px), em)) {
