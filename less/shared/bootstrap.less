@@ -1,17 +1,19 @@
 // Codekit framework imports
 // =======================================
-// @see http://lesshat.com/
-// @import 'lesshat3';
-// @import 'less-utilities';
+// Import LESSHat 3 from LESS Utilities
+@import 'lesshat3';
+// Import core LESS Utilities for things like .clearfix() etc
+@import 'less-utilities';
+// Normalize.css included from LESS Utilities
+@import 'normalize';
 
-// Import the project variables
+// Import the project variables & mixins
 // =======================================
 @import 'variables';
-
-// Local style imports
-// =======================================
 @import 'mixins';
-// @import 'normalize';
+
+// Local stylesheet imports
+// =======================================
 @import 'typography';
 // @import 'forms';
 // @import 'tables';
