@@ -2,3 +2,56 @@
 .toggle-main-nav {
 	display:none;
 }
+
+.no-js,
+.js {
+	.main-nav ul li:hover > ul {
+		display:block;
+	}
+}
+
+.main-nav {
+	.clearfix;
+
+	> ul > li {
+		.display-inline-block;
+	}
+
+	// first level
+	ul {
+		.margin-padding0;
+
+		li {
+			.margin-padding0;
+			list-style:none;
+			position:relative;
+
+			a {
+				display:block;
+				.padding(5px 10px);
+			}
+
+			// second level
+			ul {
+				display:none;
+				position:absolute;
+				.top(20px);
+				left:0;
+
+				li {
+					white-space:nowrap;
+
+					// third level
+					ul {
+						top:0;
+						left:100%;
+
+						li {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

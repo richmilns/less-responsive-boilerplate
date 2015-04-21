@@ -35,6 +35,17 @@
 	<nav class="main-nav" role="navigation">
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Test With Dropdowns</a>
+				<ul>
+					<li><a href="index.html">Link 1</a></li>
+					<li><a href="index.html">Link 2</a>
+						<ul>
+							<li><a href="index.html">Sub-link 1</a></li>
+						</ul>
+					</li>
+					<li><a href="index.html">Link 3</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 	<main class="content" role="main">
@@ -47,5 +58,13 @@
 
 	</footer>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+	(function($) {
+		$('.toggle-main-nav').click(function() {
+			$(this).toggleClass('toggle-main-nav-active');
+			$('body').toggleClass('main-nav-active');
+		});
+	})(jQuery);
+	</script>
 </body>
 </html>
