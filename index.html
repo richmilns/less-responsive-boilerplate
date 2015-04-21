@@ -29,18 +29,25 @@
 <!--<![endif]-->
 </head>
 <body>
-	<header role="banner">
-
+	<header class="masthead" role="banner">
+		<a href="#" class="toggle-main-nav"><span>Toggle</span> <b>Menu</b></a>
 	</header>
-	<nav role="navigation">
+	<nav class="main-nav" role="navigation">
 
 	</nav>
 	<main class="content" role="main">
 
 	</main>
-	<footer role="contentinfo">
+	<footer class="footer" role="contentinfo">
 
 	</footer>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+	(function($) {
+		$('.toggle-main-nav').click(function() {
+			$(this).toggleClass('toggle-main-nav-active');
+		});
+	})(jQuery);
+	</script>
 </body>
 </html>
