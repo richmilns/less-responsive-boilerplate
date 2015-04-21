@@ -12,6 +12,8 @@
 
 .main-nav {
 	.clearfix;
+	position:relative;
+	z-index:50;
 
 	> ul > li {
 		.display-inline-block;
@@ -25,6 +27,8 @@
 			.margin-padding0;
 			list-style:none;
 			position:relative;
+			z-index:10;
+
 
 			a {
 				display:block;
@@ -35,8 +39,10 @@
 			ul {
 				display:none;
 				position:absolute;
+				min-width:100%;
 				.top(20px);
 				left:0;
+				z-index:20;
 
 				li {
 					white-space:nowrap;
@@ -45,6 +51,7 @@
 					ul {
 						top:0;
 						left:100%;
+						min-width:none;
 
 						li {
 
